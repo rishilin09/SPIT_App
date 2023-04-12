@@ -1,0 +1,7 @@
+{
+  "name": "SPIT_App",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
