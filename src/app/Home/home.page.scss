@@ -1,0 +1,83 @@
+*{
+    font-family: Castoro;
+}
+
+.maintitle{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    padding: auto;
+    
+}
+
+.titleBar{
+    background: linear-gradient(45deg, rgb(184, 91, 223), blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo{
+    width: 100px;
+    padding: auto 0;
+    margin-bottom: 10px;
+}
+
+.titleBar .maintitle {
+    margin: 0;
+    text-align: center;
+}
+
+.mcaTitle{
+    padding: 10px;
+    font-size: 20px;  
+    text-align: center; 
+    font-weight: 800;
+    background: linear-gradient(45deg, rgb(222, 184, 13), rgb(0, 247, 255));
+}
+
+p, b{
+
+    text-align: center;
+}
+
+p.about{
+    font-size: 40px;
+    text-decoration: underline;
+    font-family: Satisfy;
+    font-weight: 500;
+}
+
+p.aboutDes{
+    font-size: 20px;
+    padding: 1em;
+    margin-top: -2em;
+    text-align: justify;
+    color: rgb(47, 45, 45);
+}
+
+p.vMain{
+    color: rgb(106,15, 15);
+    margin: 1em;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 2em;
+}
+
+p.vText{
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+ion-label{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.mission{
+    margin: 1em;
+    font-size: 1.5em;
+    font-weight: 700;
+    font-style: italic;
+}

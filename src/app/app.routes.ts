@@ -5,4 +5,8 @@ export const routes: Routes = [
     path: '',
     loadChildren: () => import('./tabs/tabs.routes').then((m) => m.routes),
   },
+  {
+    path: 'feedback',
+    loadComponent: () => import('./Feedback/feedback.page').then( m => m.FeedbackPage)
+  },
 ];

@@ -1,0 +1,29 @@
+*{
+    font-family: Castoro;
+}
+
+p.title{
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: -10px;
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+.events{
+    padding: 2em;
+    margin: 2em;
+    border: 2.5em mediumaquamarine groove;
+    border-radius: 2em;
+}
+
+.eventTitle{
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.eventLink{
+    margin-top: 2em;
+    float: right;
+    font-size: 1.2em;
+}

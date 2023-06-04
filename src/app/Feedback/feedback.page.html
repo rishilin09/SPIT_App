@@ -1,0 +1,71 @@
+<ion-content class="feed" [fullscreen]="true">
+  <p class="title">Feedback Form</p>
+  <form [formGroup]="feedbackForm" (ngSubmit)="submitForm()">
+    <h1 class="inpTitle" position="floating">Name</h1>
+    <ion-card class="name">
+      <ion-card-content>
+        <ion-item>
+          <ion-input class="inpNTxt" formControlName="name" type="text" placeholder="Enter your name"></ion-input>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+    <h1 class="errorMsg" *ngIf="feedbackForm.get('name')!.errors?.['required'] && feedbackForm.get('name')!.touched">
+      Please enter your name.
+    </h1>
+    <h1 class="errorMsg" *ngIf="feedbackForm.get('name')!.errors?.['invalidName']">
+      Please enter a valid name with only alphabets.
+    </h1>
+
+    <h1 class="inpTitle" position="floating">Email</h1>
+    <ion-card class="email">
+      <ion-card-content>
+        <ion-item>
+          <ion-input class="inpETxt" formControlName="email" type="email" placeholder="Enter your email"></ion-input>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+    <h1 class="errorMsg" *ngIf="feedbackForm.get('email')!.errors?.['required'] && feedbackForm.get('email')!.touched">
+      Please enter your email.
+    </h1>
+    <h1 class="errorMsg" *ngIf="feedbackForm.get('email')!.errors?.['email']">
+      Please enter a valid email address.
+    </h1>
+
+    <h1 class="inpTitle" position="floating">UCID</h1>
+    <ion-card class="ucid">
+      <ion-card-content>
+        <ion-item>
+          <ion-input class="inpUTxt" formControlName="ucid" type="text" placeholder="Enter your UCID"></ion-input>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+    <h1 class="errorMsg" *ngIf="feedbackForm.get('ucid')!.errors?.['required'] && feedbackForm.get('ucid')!.touched">
+      Please enter your UCID.
+    </h1>
+
+    <h1 class="inpTitle" position="floating">Ratings</h1>
+    <div class="star-rating">
+      <ion-icon *ngFor="let star of [0, 1, 2, 3, 4]" 
+        [name] = "getStarClass(star)"
+        (click) = "rate(star)"
+        [class.readOnly] = "readOnly"
+      ></ion-icon>
+    </div>
+  
+    <h1 class="inpTitle" position="floating">Suggestion</h1>
+    <ion-card class="suggestion">
+      <ion-card-content>
+        <ion-item>
+          <ion-textarea class="inpSTxt" formControlName="suggestion"
+            placeholder="Enter suggestion here!!"></ion-textarea>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+    
+    <h1 class="subButton">
+      <ion-button type="submit" [disabled]="!feedbackForm.valid">
+        Submit
+      </ion-button>
+    </h1>
+  </form>
+</ion-content>

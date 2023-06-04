@@ -1,0 +1,74 @@
+$txtCenter: center;
+
+*{
+  font-family: Satisfy;
+}
+
+
+p.title{
+  text-align: center;
+  font-size: 3em;
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+  .name, .email, .ratings, .ucid, .suggestion{
+    border: 4px purple double;
+    margin-bottom: 2rem;
+  }
+
+  .inpNTxt,.inpETxt,.inpUTxt,.inpSTxt{
+    font-size: 1.5em;
+  }
+
+  .star-rating {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2em;
+  }
+  
+  .star, .star-outline {
+    color: gold;
+    cursor: pointer;
+  }
+  
+  .star-outline {
+    color: lightgrey;
+  }
+  
+  .readonly {
+    cursor: default;
+  }  
+  
+  .inpSTxt{
+    height: 150px;
+  }
+
+  h1{
+    color: mediumvioletred;
+  }
+
+  .subButton {
+    display: flex;
+    justify-content: $txtCenter;
+    margin-top: 1.5rem;
+    
+    ion-button {
+        width: 60%;
+        --background: green;
+    }
+  }
+  
+  .errorMsg {
+    text-align: $txtCenter;
+    font-size: 18px;
+    margin-top: 0.5rem;
+    color: red;
+    margin: 4px;
+  }
+  
+  .inpTitle{
+    margin: 0.8em;
+    text-align: $txtCenter;
+    font-size: 40px;
+  }

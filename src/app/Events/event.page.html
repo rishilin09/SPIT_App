@@ -1,0 +1,16 @@
+<ion-content [fullscreen]="true">
+  <p class="title">Events</p>
+  <ion-card class="events" *ngFor="let event of events">
+    <ion-card-content>
+      <ion-card-title>
+        <h3 class="eventTitle">{{event.detail}}</h3>
+      </ion-card-title>
+      <ion-button class="eventLink" href="{{event.link}}">
+        <ion-icon name="eye-outline"></ion-icon>
+        <ion-label>VIEW</ion-label>
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+

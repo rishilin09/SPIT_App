@@ -1,0 +1,62 @@
+*{
+    font-family: Castoro;
+}
+
+p.faculty{
+    
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: -10px;
+    text-decoration: underline;
+}
+
+.facImg{
+    border-radius: 10px;
+    padding-top: 2px;
+    margin: 1.5em;
+}
+
+.facQuote,.intro{
+    padding: 1em;
+    margin-top: -2em;
+}
+
+.facQuote{
+    font-size: 2em;
+    color: rgb(232, 16, 142);
+    font-style: italic;
+    font-family: Satisfy;
+}
+
+.intro{
+    font-size: 2em;
+    text-align: justify;
+}
+
+.facultyDesc{
+    margin-top: -2em;
+}
+
+.facultyName{
+    font-weight: 700;
+}
+
+.facultyDesg{
+    font-family: Satisfy;
+}
+
+.content > div{
+    // padding: 2em;
+    margin: 1em;
+}
+
+.facultylIn{
+    float: right;
+    margin: 0.5em;
+}
+
+.facultyInt{
+    font-size: 1.5em;
+    font-family: Satisfy;
+}
+
